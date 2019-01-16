@@ -1,29 +1,43 @@
+//Business logic!!!!
+
 function add(number1, number2) {
   return number1 + number2;
 };
 
-var number1 =parseInt(prompt("Pick a number, any number!"));
-var number2 =parseInt(prompt("Pick another number."));
-alert(add(number1, number2));
-
 function subtract(number1, number2) {
   return number1 - number2;
 };
+
+function multiply(number1, number2) {
+  return number1 * number2;
+};
+
+function divide(number1, number2) {
+  return number1 / number2;
+};
+
+//User Interface Logic!!!
+
+$(document).ready(function() {
+
+  var number1 =parseInt(prompt("Pick a number, any number!"));
+  var number2 =parseInt(prompt("Pick another number."));
+
+  alert(add(number1, number2));
+});
+
 //
 // var number1 =parseInt(prompt("Pick a number, any number!"));
 // var number2 =parseInt(prompt("Pick another number."));
 // alert(subtract(number1, number2));
 //
-function multiply(number1, number2) {
-  return number1 * number2;
-};
+
 //
 // var number1 =parseInt(prompt("Pick a number, any number!"));
 // var number2 =parseInt(prompt("Pick another number."));
 // alert(multiply(number1, number2));
 //
-function divide(number1, number2) {
-  return number1 / number2;
+
 // };
 //
 // var number1 =parseInt(prompt("Pick a number, any number!"));
